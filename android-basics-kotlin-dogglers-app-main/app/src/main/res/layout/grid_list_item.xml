@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TODO: Note that this list item will be used in a grid view which requires a
+                different layout because the list will have two columns of cards.
+                This means that the information within the card must stack the vertically
+                since there is less room in terms of width.-->
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </GridView>
+
+        <!-- TODO: Create an ImageView resource for the image of the dog.
+               The height should be 194dp
+               The width should match the with of the card
+               The scaleType should be set to centerCrop-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxHeight="194dp"
+            android:maxWidth="@dimen/cardview_default_radius"
+            android:scaleType="centerCrop">
+        </ImageView>
+
+        <!-- TODO: Create a TextView for each of the following:
+                The dog's name
+                The dog's age
+                The dog's hobbies-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/dog_name"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/dog_age"
+            android:paddingStart="8dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/dog_hobies"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="0dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1">
+        </TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
